@@ -1,0 +1,11 @@
+[
+  {
+    "id": "awjl123-dawdad2-123kasd",
+    "title": "Chilly con peper",
+    "price": 300,
+    "description": "Salsa picante de chilly con ghost peper ultra picante",
+    "state": "enable",
+    "image": "../images/chilly_pepper_1.png",
+    "type": "sauce"
+  }
+]
