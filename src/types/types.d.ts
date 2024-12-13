@@ -1,12 +1,11 @@
-type ProductState = 'enable' | 'disable'
-type ProductType = 'sauce' | 'merchant'
+type ProductType = 'sauce' | 'merchandising'
 
 export interface Product {
   id: string
   title: string
   price: number
-  description:? string
-  state: ProductState
+  description: ? string
+  available: boolean
   image: string
   type: ProductType
 }
@@ -14,4 +13,3 @@ export interface Product {
 export type PartialProduct = Partial<Product>
 
 export type NewProduct = Omit<Product, 'id'>
-

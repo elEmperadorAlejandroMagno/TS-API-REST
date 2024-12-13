@@ -1,11 +1,38 @@
 [
   {
-    "id": "awjl123-dawdad2-123kasd",
-    "title": "Chilly con peper",
-    "price": 300,
-    "description": "Salsa picante de chilly con ghost peper ultra picante",
-    "state": "enable",
-    "image": "../images/chilly_pepper_1.png",
-    "type": "sauce"
+      "id": "001",
+      "title": "Red Hot Sauce",
+      "description": "A spicy sauce with a hint of lemon.",
+      "price": 150.00,
+      "type": "sauce",
+      "image": "/images/red-hot-sauce.jpg",
+      "available": true
+  },
+  {
+      "id": "002",
+      "title": "BBQ Sauce",
+      "description": "A smoky and sweet barbecue sauce.",
+      "price": 200.00,
+      "type": "sauce",
+      "image": "/images/bbq-sauce.jpg",
+      "available": true
+  },
+  {
+      "id": "003",
+      "title": "Promotional Cap",
+      "description": "Official brand cap.",
+      "price": 350.00,
+      "type": "merchandising",
+      "image": "/images/promotional-cap.jpg",
+      "available": false
+  },
+  {
+      "id": "004",
+      "title": "Official T-Shirt",
+      "description": "T-shirt with the brand's logo.",
+      "price": 500.00,
+      "type": "merchandising",
+      "image": "/images/official-tshirt.jpg",
+      "available": true
   }
 ]
