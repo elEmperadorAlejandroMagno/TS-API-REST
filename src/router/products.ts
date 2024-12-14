@@ -1,10 +1,10 @@
 import express from 'express'
-import { createProduct, getProductById, getProducts, updateProduct } from '../services/products'
+import { createProduct, deleteProduct, getProductById, getProducts, updateProduct } from '../services/products'
 const router = express.Router()
 
 router.get('/', (req, res) => {
-  const { type } = req.query
-  const listProduct = getProducts(type)
+  const { type, available, limit } = req.query
+  const listProduct = getProducts(type, available, limit)
   res.send(listProduct)
 })
 router.get('/:id', (req, res) => {
@@ -23,6 +23,10 @@ router.put('/:id', (req, res) => {
   const updatedProduct = updateProduct(input, id)
   res.send(updatedProduct)
 })
-router.delete('/:id')
+router.delete('/:id', (req, res) => {
+  const id = req.params.id
+  const deletedProduct = deleteProduct(id)
+  res.send(deletedProduct)
+})
 
 export default router
