@@ -28,10 +28,10 @@ export const getProductById = (id: string): Product => {
 }
 
 export const createProduct = (input: NewProduct): Product => {
-  validateProduct(input)
+  const validatedProduct = validateProduct(input)
   const newProduct = {
     id: randomUUID(),
-    ...input
+    ...validatedProduct
   }
   products.push(newProduct)
   return newProduct
@@ -40,22 +40,19 @@ export const createProduct = (input: NewProduct): Product => {
 export const updateProduct = (input: PartialProduct, id: string): PartialProduct => {
   const validatedProduct = validatePartialProduct(input)
   const productIndex = products.findIndex(e => e.id === id)
-  if (productIndex === undefined) {
-    throw new Error('El producto no fue encontrado')
+  if (productIndex === -1) {
+    throw new Error('Producto no encontrado')
   }
-  const updatedProduct = {
+  products[productIndex] = {
     ...products[productIndex],
     ...validatedProduct
   }
-  products[productIndex] = updatedProduct
-  return updatedProduct
+  return products[productIndex]
 }
 
 export const deleteProduct = (id: string): boolean => {
   const productToDelete = products.findIndex(e => e.id === id)
-  if (productToDelete === -1) {
-    throw new Error('Product not found')
-  }
+  if (productToDelete === -1) return false
   products.splice(productToDelete, 1)
   return true
 }

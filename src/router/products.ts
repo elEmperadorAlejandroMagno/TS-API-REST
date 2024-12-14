@@ -26,6 +26,7 @@ router.put('/:id', (req, res) => {
 router.delete('/:id', (req, res) => {
   const id = req.params.id
   const deletedProduct = deleteProduct(id)
+  if (!deletedProduct) res.status(400).send('Product not found')
   res.send(deletedProduct)
 })
 
