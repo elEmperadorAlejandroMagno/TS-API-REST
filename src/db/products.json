@@ -5,7 +5,7 @@
       "description": "A spicy sauce with a hint of lemon.",
       "price": 150.00,
       "type": "sauce",
-      "image": "/images/red-hot-sauce.jpg",
+      "image": "../static/image/products/habanero_tomate.png",
       "available": true
   },
   {
@@ -14,7 +14,7 @@
       "description": "A smoky and sweet barbecue sauce.",
       "price": 200.00,
       "type": "sauce",
-      "image": "/images/bbq-sauce.jpg",
+      "image": "../static/image/products/carolina_reaper_ajo.png",
       "available": true
   },
   {
@@ -23,7 +23,8 @@
       "description": "Official brand cap.",
       "price": 350.00,
       "type": "merchandising",
-      "image": "/images/promotional-cap.jpg",
+      "image": "image/products/Negocio del picante reve.png",
+
       "available": false
   },
   {
@@ -32,7 +33,7 @@
       "description": "T-shirt with the brand's logo.",
       "price": 500.00,
       "type": "merchandising",
-      "image": "/images/official-tshirt.jpg",
+      "image": "image/products/Amigo del diablo reverso.jpg",
       "available": true
   }
 ]

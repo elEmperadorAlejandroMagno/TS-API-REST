@@ -1,8 +1,9 @@
-import express from "express";
+import express from 'express'
 import productsRouter from './router/products'
-
+import { corsMiddleware } from './services/cors'
 
 const app = express()
+app.use(corsMiddleware())
 
 app.use(express.json())
 
