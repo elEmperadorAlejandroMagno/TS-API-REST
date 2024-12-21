@@ -18,13 +18,48 @@
       "available": true
   },
   {
+    "id": "008",
+    "title": "Salsa de arándanos con ghost pepper",
+    "description": "Fresco y sabrosa la salsa de arándanos muy buena porque sí",
+    "price": 400.00,
+    "type": "sauce",
+    "image": "../static/image/products/arandanos_ghostpepper.png",
+    "available": true
+  },
+  {
+    "id": "009",
+    "title": "Gota Siniestra",
+    "description": "Solo para los más valientes, una gota ultra picante que te hará sudar",
+    "price": 350.00,
+    "type": "sauce",
+    "image": "../static/image/products/gota_siniestra.png",
+    "available": true
+  },
+  {
+    "id": "010",
+    "title": "Salsa de Mango",
+    "description": "Si te gusta el mango, bancate el carozo que se sho",
+    "price": 460.00,
+    "type": "sauce",
+    "image": "../static/image/products/mango-fondo-blanco.png",
+    "available": true
+  },
+  {
+    "id": "011",
+    "title": "Salsa de Jalapeño, Cilantro y Lima",
+    "description": "Una salsa suave y rica para acompañar tus comidas y disfrutar con amigos",
+    "price": 340.00,
+    "type": "sauce",
+   "image": "../static/image/products/jalap_cilantro_lima.png",
+   "available": true
+  },
+  {
       "id": "003",
       "title": "Promotional Cap",
       "description": "Official brand cap.",
       "price": 350.00,
       "type": "merchandising",
-      "image": "image/products/Negocio del picante reve.png",
-
+      "image": "../static/image/products/Negocio del picante reve.png",
       "available": false
   },
   {
@@ -33,7 +68,7 @@
       "description": "T-shirt with the brand's logo.",
       "price": 500.00,
       "type": "merchandising",
-      "image": "image/products/Amigo del diablo reverso.jpg",
+      "image": "../static/image/products/Amigo del diablo reverso.jpg",
       "available": true
   }
 ]
