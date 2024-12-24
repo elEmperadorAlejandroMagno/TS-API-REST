@@ -1,5 +1,23 @@
 [
   {
+    "id": "013",
+    "title": "Pack Navideño Completo",
+    "description": "Mix picante de condimentos para carnes y para verduras, 4 salsas a elección & stickers",
+    "price": 1500.00,
+    "type": "sauce",
+    "image": "static/image/products/fondo transparente/Pack-completo-transp_edited.png",
+    "available": true
+  },
+  {
+    "id": "014",
+    "title": "Pack Navideño chico",
+    "description": "2 salsas + gota siniestra + stickers + combo de condimentos",
+    "price": 1000.00,
+    "type": "sauce",
+    "image": "static/image/products/fondo transparente/Pack-chico-transp_edited.png",
+    "available": true
+  },
+  {
       "id": "001",
       "title": "Salsa Chipotle",
       "description": "A spicy sauce with a hint of lemon.",
@@ -45,15 +63,6 @@
     "available": true
   },
   {
-    "id": "011",
-    "title": "Salsa de Jalapeño, Cilantro y Lima",
-    "description": "Una salsa suave y rica para acompañar tus comidas y disfrutar con amigos",
-    "price": 350.00,
-    "type": "sauce",
-   "image": "static/image/products/fondo transparente/Jalapeno-frente-transp.png",
-   "available": true
-  },
-  {
       "id": "003",
       "title": "Promotional Cap",
       "description": "Official brand cap.",
@@ -88,5 +97,14 @@
     "type": "sauce",
     "image": "static/image/products/fondo transparente/Habanero-frente-transp.png",
     "available": true
+  },
+  {
+    "id": "011",
+    "title": "Salsa de Jalapeño, Cilantro y Lima",
+    "description": "Una salsa suave y rica para acompañar tus comidas y disfrutar con amigos",
+    "price": 350.00,
+    "type": "sauce",
+   "image": "static/image/products/fondo transparente/Jalapeno-frente-transp.png",
+   "available": true
   }
 ]
