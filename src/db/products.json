@@ -1,20 +1,20 @@
 [
   {
       "id": "001",
-      "title": "Red Hot Sauce",
+      "title": "Salsa Chipotle",
       "description": "A spicy sauce with a hint of lemon.",
-      "price": 150.00,
+      "price": 400.00,
       "type": "sauce",
-      "image": "../static/image/products/habanero_tomate.png",
+      "image": "static/image/products/fondo transparente/Chipotle-frente-transp.png",
       "available": true
   },
   {
       "id": "002",
-      "title": "BBQ Sauce",
+      "title": "Carolina Reaper y ajo",
       "description": "A smoky and sweet barbecue sauce.",
-      "price": 200.00,
+      "price": 400.00,
       "type": "sauce",
-      "image": "../static/image/products/carolina_reaper_ajo.png",
+      "image": "static/image/products/fondo transparente/Reaper-frente-transp.png",
       "available": true
   },
   {
@@ -23,34 +23,34 @@
     "description": "Fresco y sabrosa la salsa de arándanos muy buena porque sí",
     "price": 400.00,
     "type": "sauce",
-    "image": "../static/image/products/arandanos_ghostpepper.png",
+    "image": "static/image/products/fondo transparente/Arándanos-fondo-transp_edited_edited.png",
     "available": true
   },
   {
     "id": "009",
     "title": "Gota Siniestra",
     "description": "Solo para los más valientes, una gota ultra picante que te hará sudar",
-    "price": 350.00,
+    "price": 300.00,
     "type": "sauce",
-    "image": "../static/image/products/gota_siniestra.png",
+    "image": "static/image/products/fondo transparente/Gota-frente-Transp.png",
     "available": true
   },
   {
     "id": "010",
     "title": "Salsa de Mango",
     "description": "Si te gusta el mango, bancate el carozo que se sho",
-    "price": 460.00,
+    "price": 400.00,
     "type": "sauce",
-    "image": "../static/image/products/mango-fondo-blanco.png",
+    "image": "static/image/products/fondo transparente/Mango-frente-transp.png",
     "available": true
   },
   {
     "id": "011",
     "title": "Salsa de Jalapeño, Cilantro y Lima",
     "description": "Una salsa suave y rica para acompañar tus comidas y disfrutar con amigos",
-    "price": 340.00,
+    "price": 350.00,
     "type": "sauce",
-   "image": "../static/image/products/jalap_cilantro_lima.png",
+   "image": "static/image/products/fondo transparente/Jalapeno-frente-transp.png",
    "available": true
   },
   {
@@ -70,5 +70,23 @@
       "type": "merchandising",
       "image": "../static/image/products/Amigo del diablo reverso.jpg",
       "available": true
+  },
+  {
+    "id": "012",
+    "title": "Habanero Chocolate y Ajo Negro",
+    "description": "Salsa de chocolate y ajo",
+    "price": 400.00,
+    "type": "sauce",
+    "image": "static/image/products/fondo transparente/habanero-choco-transp_edited_edited_edited_edited.png",
+    "available": true
+  },
+  {
+    "id": "012",
+    "title": "Habanero rojo y tomate",
+    "description": "Habanero y tomate",
+    "price": 350.00,
+    "type": "sauce",
+    "image": "static/image/products/fondo transparente/Habanero-frente-transp.png",
+    "available": true
   }
 ]
