@@ -1,4 +1,5 @@
 type ProductType = 'sauce' | 'merchandising'
+type ImagesType = string[]
 
 export interface Product {
   id: string
@@ -6,7 +7,7 @@ export interface Product {
   price: number
   description: ? string
   available: boolean
-  image: string
+  images: ImagesType
   type: ProductType
 }
 
