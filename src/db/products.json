@@ -2,109 +2,117 @@
   {
     "id": "013",
     "title": "Pack Navideño Completo",
-    "description": "Mix picante de condimentos para carnes y para verduras, 4 salsas a elección & stickers",
+    "description": "Mix picante de condimentos para carnes y para verduras, 4 salsas a elección & stickers.",
     "price": 1500.00,
     "type": "sauce",
-    "image": "static/image/products/fondo transparente/Pack-completo-transp_edited.png",
+    "images": ["http://localhost:1234/images/products/fondo transparente/Pack-completo-transp.png"],
     "available": true
   },
   {
     "id": "014",
     "title": "Pack Navideño chico",
-    "description": "2 salsas + gota siniestra + stickers + combo de condimentos",
+    "description": "Mix picante de condimientos para carnes y para vegetales, 2 salsas a elección, 1 gota siniestra y stickers.",
     "price": 1000.00,
     "type": "sauce",
-    "image": "static/image/products/fondo transparente/Pack-chico-transp_edited.png",
+    "images": ["http://localhost:1234/images/products/fondo transparente/Pack-chico-transp.png"],
     "available": true
   },
   {
       "id": "001",
-      "title": "Salsa Chipotle",
-      "description": "A spicy sauce with a hint of lemon.",
+      "title": "Salsa de Chipotle",
+      "description": "Una salsa ahumada a base de chipotles, zanahoria, tomates y otras deliciosidades. De picante intermedio, esta salsa tiene un sabor especial y único en su especie. El chipotle se hace ahumando y secando chiles. En nuestro caso utilizamos jalapeños rojos, que son un poco más picantes que el jalapeño verde por haber estado más tiempo en la planta..",
       "price": 400.00,
       "type": "sauce",
-      "image": "static/image/products/fondo transparente/Chipotle-frente-transp.png",
+      "images": ["http://localhost:1234/images/products/fondo transparente/Chipotle-frente-transp.png", "http://localhost:1234/images/products/fondo transparente/Chipotle-lado-transp.png"],
       "available": true
   },
   {
       "id": "002",
       "title": "Carolina Reaper y ajo",
-      "description": "A smoky and sweet barbecue sauce.",
+      "description": "MUY picante, para más placer.",
       "price": 400.00,
       "type": "sauce",
-      "image": "static/image/products/fondo transparente/Reaper-frente-transp.png",
+      "images": ["http://localhost:1234/images/products/fondo transparente/Reaper-frente-transp.png", "http://localhost:1234/images/products/fondo transparente/Reaper-lado-transp.png"],
       "available": true
   },
   {
     "id": "008",
-    "title": "Salsa de arándanos con ghost pepper",
-    "description": "Fresco y sabrosa la salsa de arándanos muy buena porque sí",
+    "title": "Salsa de Arándanos con Ghost Pepper",
+    "description": "Una salsa dulzona y de picante fuerte. Edición limitada, solo dura lo que dura la cosecha de arándanos.",
     "price": 400.00,
     "type": "sauce",
-    "image": "static/image/products/fondo transparente/Arándanos-fondo-transp_edited_edited.png",
+    "images": ["http://localhost:1234/images/products/fondo transparente/Arándanos-fondo-transp_edited_edited.png"],
     "available": true
   },
   {
     "id": "009",
     "title": "Gota Siniestra",
-    "description": "Solo para los más valientes, una gota ultra picante que te hará sudar",
+    "description": "Picante extremo. Solo para valientes.",
     "price": 300.00,
     "type": "sauce",
-    "image": "static/image/products/fondo transparente/Gota-frente-Transp.png",
+    "images": ["http://localhost:1234/images/products/fondo transparente/Gota-frente-Transp.png", "http://localhost:1234/images/products/fondo transparente/Gota-lado-Transp.png"],
     "available": true
   },
   {
     "id": "010",
     "title": "Salsa de Mango",
-    "description": "Si te gusta el mango, bancate el carozo que se sho",
+    "description": "Dulzona, de picante intermedio a fuerte.",
     "price": 400.00,
     "type": "sauce",
-    "image": "static/image/products/fondo transparente/Mango-frente-transp.png",
+    "images": ["http://localhost:1234/images/products/fondo transparente/Mango-frente-transp.png", "http://localhost:1234/images/products/fondo transparente/Mango-lado-transp.png"],
     "available": true
   },
   {
       "id": "003",
-      "title": "Promotional Cap",
-      "description": "Official brand cap.",
+      "title": "El Negocio del Picante",
+      "description": "Official T-shirt de nuestra marca.",
       "price": 350.00,
       "type": "merchandising",
-      "image": "../static/image/products/Negocio del picante reve.png",
+      "images": ["http://localhost:1234/images/products/merch/Negocio del picante reve.png"],
       "available": false
   },
   {
       "id": "004",
-      "title": "Official T-Shirt",
-      "description": "T-shirt with the brand's logo.",
+      "title": "Morrones",
+      "description": "Agencia del Picante T-shirt",
       "price": 500.00,
       "type": "merchandising",
-      "image": "../static/image/products/Amigo del diablo reverso.jpg",
+      "images": ["http://localhost:1234/images/products/merch/morrones.png"],
       "available": true
+  },
+  {
+    "id": "005",
+    "title": "Amigo del diablo",
+    "description": "",
+    "price": 700.00,
+    "type": "merchandising",
+    "images": ["http://localhost:1234/images/products/merch/Amigo del diablo reverso.jpg"]
   },
   {
     "id": "012",
     "title": "Habanero Chocolate y Ajo Negro",
-    "description": "Salsa de chocolate y ajo",
+    "description": "No tiene chocolate, es el nombre del habanero. No juzgues un libro por su portada, lo tenes que probar.",
     "price": 400.00,
     "type": "sauce",
-    "image": "static/image/products/fondo transparente/habanero-choco-transp_edited_edited_edited_edited.png",
+    "images": ["http://localhost:1234/images/products/fondo transparente/habanero-choco-transp.png"],
     "available": true
   },
   {
     "id": "012",
     "title": "Habanero rojo y tomate",
-    "description": "Habanero y tomate",
+    "description": "Clásico, va con todo, picante intermedio.",
     "price": 350.00,
     "type": "sauce",
-    "image": "static/image/products/fondo transparente/Habanero-frente-transp.png",
+    "images": ["http://localhost:1234/images/products/fondo transparente/Habanero-frente-transp.png", "http://localhost:1234/images/products/fondo transparente/Habanero-lado-transp.png"],
     "available": true
   },
   {
     "id": "011",
     "title": "Salsa de Jalapeño, Cilantro y Lima",
-    "description": "Una salsa suave y rica para acompañar tus comidas y disfrutar con amigos",
+    "description": "La más suave, cítrica y fresca.",
     "price": 350.00,
     "type": "sauce",
-   "image": "static/image/products/fondo transparente/Jalapeno-frente-transp.png",
+   "images": ["http://localhost:1234/images/products/fondo transparente/Jalapeno-frente-transp.png", "http://localhost:1234/images/products/fondo transparente/Jalapeno-lado-transp.png"],
    "available": true
   }
 ]
