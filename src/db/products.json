@@ -1,6 +1,6 @@
 [
     {
-        "id": "013",
+        "id": "13",
         "title": "Pack Navideño Completo",
         "description": "Mix picante de condimentos para carnes y para verduras, 4 salsas a elección & stickers.",
         "price": 1500.00,
@@ -9,7 +9,7 @@
         "available": true
     },
     {
-        "id": "014",
+        "id": "14",
         "title": "Pack Navideño chico",
         "description": "Mix picante de condimientos para carnes y para vegetales, 2 salsas a elección, 1 gota siniestra y stickers.",
         "price": 1000.00,
@@ -18,7 +18,7 @@
         "available": true
     },
     {
-        "id": "001",
+        "id": "1",
         "title": "Salsa de Chipotle",
         "description": "Una salsa ahumada a base de chipotles, zanahoria, tomates y otras deliciosidades. De picante intermedio, esta salsa tiene un sabor especial y único en su especie. El chipotle se hace ahumando y secando chiles. En nuestro caso utilizamos jalapeños rojos, que son un poco más picantes que el jalapeño verde por haber estado más tiempo en la planta..",
         "price": 400.00,
@@ -27,7 +27,7 @@
         "available": true
     },
     {
-        "id": "002",
+        "id": "2",
         "title": "Carolina Reaper y ajo",
         "description": "MUY picante, para más placer.",
         "price": 400.00,
@@ -36,7 +36,7 @@
         "available": true
     },
     {
-        "id": "008",
+        "id": "8",
         "title": "Salsa de Arándanos con Ghost Pepper",
         "description": "Una salsa dulzona y de picante fuerte. Edición limitada, solo dura lo que dura la cosecha de arándanos.",
         "price": 400.00,
@@ -45,7 +45,7 @@
         "available": true
     },
     {
-        "id": "009",
+        "id": "9",
         "title": "Gota Siniestra",
         "description": "Picante extremo. Solo para valientes.",
         "price": 300.00,
@@ -54,7 +54,7 @@
         "available": true
     },
     {
-        "id": "010",
+        "id": "10",
         "title": "Salsa de Mango",
         "description": "Dulzona, de picante intermedio a fuerte.",
         "price": 400.00,
@@ -63,7 +63,7 @@
         "available": true
     },
     {
-        "id": "003",
+        "id": "3",
         "title": "El Negocio del Picante",
         "description": "Official T-shirt de nuestra marca.",
         "price": 350.00,
@@ -72,7 +72,7 @@
         "available": false
     },
     {
-        "id": "004",
+        "id": "4",
         "title": "Morrones",
         "description": "Agencia del Picante T-shirt",
         "price": 500.00,
@@ -81,7 +81,7 @@
         "available": true
     },
     {
-        "id": "005",
+        "id": "5",
         "title": "Amigo del diablo",
         "description": "",
         "price": 700.00,
@@ -89,7 +89,7 @@
         "images": ["/images/products/merch/Amigo del diablo reverso.jpg"]
     },
     {
-        "id": "012",
+        "id": "12",
         "title": "Habanero Chocolate y Ajo Negro",
         "description": "No tiene chocolate, es el nombre del habanero. No juzgues un libro por su portada, lo tenes que probar.",
         "price": 400.00,
@@ -98,7 +98,7 @@
         "available": true
     },
     {
-        "id": "012",
+        "id": "12",
         "title": "Habanero rojo y tomate",
         "description": "Clásico, va con todo, picante intermedio.",
         "price": 350.00,
@@ -107,7 +107,7 @@
         "available": true
     },
     {
-        "id": "011",
+        "id": "11",
         "title": "Salsa de Jalapeño, Cilantro y Lima",
         "description": "La más suave, cítrica y fresca.",
         "price": 350.00,
