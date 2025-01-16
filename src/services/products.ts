@@ -1,7 +1,8 @@
 import { Product, NewProduct, PartialProduct } from '../types/types'
-import PRODUCTS from '../db/products.json'
 import { validatePartialProduct, validateProduct } from '../utils/validateProduct'
 import { randomUUID } from 'crypto'
+
+
 
 const products: Product[] = PRODUCTS as Product[]
 
