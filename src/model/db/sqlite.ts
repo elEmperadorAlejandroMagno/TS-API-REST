@@ -22,7 +22,7 @@ export async function getDB (): Promise<Database> {
   return db as Database
 }
 
-export async function getProducts (filter: ProductType): Promise<Product[]> {
+export async function getProducts (filter: ProductType | undefined): Promise<Product[]> {
   const db = await getDB()
   if (filter != null) {
     return await db.all<Product[]>('SELECT * FROM products WHERE type = ?', filter)

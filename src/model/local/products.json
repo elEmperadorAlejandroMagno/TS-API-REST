@@ -67,7 +67,7 @@
       "title": "El Negocio del Picante",
       "description": "Official T-shirt de nuestra marca.",
       "price": 350.00,
-      "type": "merchandising",
+      "type": "merch",
       "images": ["/images/products/merch/Negocio del picante reve.png"],
       "available": false
   },
@@ -76,7 +76,7 @@
       "title": "Morrones",
       "description": "Agencia del Picante T-shirt",
       "price": 500.00,
-      "type": "merchandising",
+      "type": "merch",
       "images": ["/images/products/merch/morrones.png"],
       "available": true
   },
@@ -85,7 +85,7 @@
       "title": "Amigo del diablo",
       "description": "",
       "price": 700.00,
-      "type": "merchandising",
+      "type": "merch",
       "images": ["/images/products/merch/Amigo del diablo reverso.jpg"]
   },
   {

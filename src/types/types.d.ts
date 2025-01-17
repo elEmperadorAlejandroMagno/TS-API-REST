@@ -1,4 +1,4 @@
-type ProductType = 'sauce' | 'merchandising'
+type ProductType = 'sauce' | 'merch'
 type ImagesType = string
 
 /* Con base de datos */

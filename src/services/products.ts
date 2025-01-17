@@ -1,10 +1,10 @@
 // import { getProducts, getProduct, addProduct, updateProduct, deleteProduct } from '../model/local/local'
 import { getProducts, getProduct, addProduct, updateProduct, deleteProduct } from '../model/db/sqlite'
-import { PartialProduct, Product, ProductType } from '../types/types'
+import { PartialProduct, Product } from '../types/types'
 
 /* Al usar con local .json cambiar types a Local */
 
-export async function getProductsList (filter: ProductType): Promise<any> {
+export async function getProductsList (filter: any): Promise<any> {
   return await getProducts(filter)
 }
 
