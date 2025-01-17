@@ -1,5 +1,5 @@
 import { validateProduct, validatePartialProduct } from '../../utils/validateProduct'
-import { Product, ProductImage, ProductInfo, ProductType } from '../../types/types'
+import { Product, ProductType } from '../../types/types'
 import sqlite3 from 'sqlite3'
 import { open, Database } from 'sqlite'
 import { randomUUID as rID } from 'crypto'
@@ -22,26 +22,49 @@ export async function getDB (): Promise<Database> {
   return db as Database
 }
 
-export async function getProducts (filter: ProductType | undefined): Promise<Product[]> {
+export async function getProducts (filter: ProductType | undefined): Promise<any> {
   const db = await getDB()
+  const query = `
+    SELECT 
+      p.id, 
+      p.title, 
+      p.description, 
+      p.price, 
+      p.type, 
+      (
+        SELECT GROUP_CONCAT(pi.image, ',') 
+        FROM product_images pi 
+        WHERE pi.product_id = p.id
+      ) AS images 
+    FROM products p 
+  `
   if (filter != null) {
-    return await db.all<Product[]>('SELECT * FROM products WHERE type = ?', filter)
+    const result = await db.all(query, filter)
+    return result
   }
-  return await db.all<Product[]>('SELECT * FROM products')
+  const result = await db.all(query)
+  return result
 }
 
-export async function getProduct (id: string): Promise<Product> {
+export async function getProduct (id: string): Promise<any> {
   const db = await getDB()
-  const productInfo: ProductInfo | undefined = await db.get<ProductInfo>('SELECT * FROM products WHERE id = ?', id)
-  const productImages: ProductImage[] | undefined = await db.all<ProductImage[]>('SELECT * FROM product_images WHERE product_id = ?', id)
-  if (productInfo == null || productImages == null) {
-    throw new Error('Product or Images not found')
-  }
-  const product: Product = {
-    product_info: productInfo,
-    images: productImages
-  }
-  return product
+  const query = `
+  SELECT 
+    p.id, 
+    p.title, 
+    p.description, 
+    p.price, 
+    p.type, 
+    (
+      SELECT GROUP_CONCAT(pi.image, ',') 
+      FROM product_images pi 
+      WHERE pi.product_id = p.id
+    ) AS images 
+  FROM products p
+  WHERE p.id = ? 
+`
+  const result = await db.all(query, id)
+  return result
 }
 
 export async function addProduct (product: Product): Promise<Product | boolean> {
