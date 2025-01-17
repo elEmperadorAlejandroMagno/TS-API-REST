@@ -32,7 +32,7 @@ app.get('/', (_req, res) => {
 app.post('/upload', upload.array('images', 10), (req, res) => {
   try {
     const files = req.files as Express.Multer.File[]
-    if (!files) {
+    if (files == null) {
       throw new Error('No files found')
     }
     const filePaths = files.map(file => `images/products/fondo transparente/${file.filename}`)

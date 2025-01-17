@@ -1,33 +1,53 @@
 import express from 'express'
-import { createProduct, deleteProduct, getProductById, getProducts, updateProduct } from '../services/products'
+import { getProductsList, getProductById, createProduct, updateProductById, deleteProductById } from '../services/products'
 const router = express.Router()
 
-router.get('/', (req, res) => {
-  const { type, available, limit } = req.query
-  const listProduct = getProducts(type, available, limit)
-  res.send(listProduct)
+router.get('/', async (req, res) => {
+  try {
+    const { type } = req.query
+    const listProduct = await getProductsList(type)
+    res.send(listProduct)
+  } catch (err) {
+    res.status(500).send({ error: 'Error fetching products' })
+  }
 })
-router.get('/:id', (req, res) => {
-  const id = req.params.id
-  const product = getProductById(id)
-  res.send(product)
+router.get('/:id', async (req, res) => {
+  try {
+    const id = req.params.id
+    const product = await getProductById(id)
+    if (product == null) res.status(404).send('Product not found')
+    res.send(product)
+  } catch (err) {
+    res.status(500).send({ error: 'Error fetching product' })
+  }
 })
-router.post('/', (req, res) => {
-  const input = req.body
-  const productCreated = createProduct(input)
-  res.send(productCreated)
+router.post('/', async (req, res) => {
+  try {
+    const input = req.body
+    const createdProduct = await createProduct(input)
+    res.send({ createdProduct })
+  } catch (err) {
+    res.status(500).send({ error: 'Error creating product' })
+  }
 })
-router.put('/:id', (req, res) => {
-  const id = req.params.id
-  const input = req.body
-  const updatedProduct = updateProduct(input, id)
-  res.send(updatedProduct)
+router.put('/:id', async (req, res) => {
+  try {
+    const id = req.params.id
+    const input = req.body
+    const updatedProduct = await updateProductById(id, input)
+    res.send({ updatedProduct })
+  } catch (err) {
+    res.status(500).send({ error: 'Error updating product' })
+  }
 })
-router.delete('/:id', (req, res) => {
-  const id = req.params.id
-  const deletedProduct = deleteProduct(id)
-  if (!deletedProduct) res.status(400).send('Product not found')
-  res.send(deletedProduct)
+router.delete('/:id', async (req, res) => {
+  try {
+    const id = req.params.id
+    await deleteProductById(id)
+    res.send({ message: 'Product deleted' })
+  } catch (err) {
+    res.status(500).send({ error: 'Error deleting product' })
+  }
 })
 
 export default router
