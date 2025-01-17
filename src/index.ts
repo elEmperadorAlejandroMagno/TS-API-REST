@@ -15,7 +15,7 @@ app.use('/images', express.static(path.resolve('public/images')))
 
 const storage = multer.diskStorage({
   destination: (_req: express.Request, _file: Express.Multer.File, cb: (error: Error | null, destination: string) => void) => {
-    cb(null, path.join(__dirname, '../public/images/products/fondo transparente'))
+    cb(null, path.join(__dirname, '../public/images/products'))
   },
   filename: (_req: express.Request, file: Express.Multer.File, cb: (error: Error | null, filename: string) => void) => {
     cb(null, `${file.originalname}`)
@@ -35,7 +35,7 @@ app.post('/upload', upload.array('images', 10), (req, res) => {
     if (files == null) {
       throw new Error('No files found')
     }
-    const filePaths = files.map(file => `images/products/fondo transparente/${file.filename}`)
+    const filePaths = files.map(file => `images/products/${file.filename}`)
     res.status(200).json({ message: 'images uploaded', files: filePaths })
   } catch (error) {
     res.status(400).json({ message: 'Error al cargar las imagenes', error })

@@ -1,7 +1,7 @@
 import cors from 'cors'
 
 const ACCEPTED_ORIGINS = [
-  process.env.fdmURL,
+  process.env.Deployed,
   process.env.Local
 ]
 
