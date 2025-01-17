@@ -1,43 +1,45 @@
-import { Product, NewProduct, PartialProduct } from '../../types/types'
+import { ProductLocal, PartialProductLocal, NewProductLocal } from '../../types/types'
 import PRODUCTS from '../local/products.json'
 import { validatePartialProduct, validateProduct } from '../../utils/validateProduct'
 import { randomUUID } from 'crypto'
 
-const products: Product[] = PRODUCTS as Product[]
+const products: ProductLocal[] = PRODUCTS as ProductLocal[]
 
-export const getProducts = (type: any, available: any, limit: any): Product[] => {
+export const getProducts = async (filter: any): Promise<ProductLocal[]> => {
   let filteredProducts = products
 
-  if (type !== undefined) {
-    filteredProducts = products.filter(e => e.type === type)
+  if (filter !== undefined) {
+    filteredProducts = products.filter(e => e.type === filter)
   }
 
-  if (available !== undefined) {
-    filteredProducts = filteredProducts.filter(e => e.available === available)
-  }
-
-  return filteredProducts.slice(0, limit)
+  return await new Promise((resolve, _reject) => {
+    resolve(filteredProducts)
+  })
 }
 
-export const getProductById = (id: string): Product => {
+export const getProduct = async (id: string): Promise<ProductLocal> => {
   const product = products.find(e => e.id === id)
   if (product === undefined) {
     throw new Error(`Producto con id ${id} no encontrado`)
   }
-  return product
+  return await new Promise((resolve, _reject) => {
+    resolve(product)
+  })
 }
 
-export const createProduct = (input: NewProduct): Product => {
+export const addProduct = async (input: NewProductLocal): Promise<ProductLocal> => {
   const validatedProduct = validateProduct(input)
   const newProduct = {
     id: randomUUID(),
     ...validatedProduct
   }
   products.push(newProduct)
-  return newProduct
+  return await new Promise((resolve, _reject) => {
+    resolve(newProduct)
+  })
 }
 
-export const updateProduct = (input: PartialProduct, id: string): PartialProduct => {
+export const updateProduct = async (id: string, input: PartialProductLocal): Promise<ProductLocal> => {
   const validatedProduct = validatePartialProduct(input)
   const productIndex = products.findIndex(e => e.id === id)
   if (productIndex === -1) {
@@ -47,12 +49,20 @@ export const updateProduct = (input: PartialProduct, id: string): PartialProduct
     ...products[productIndex],
     ...validatedProduct
   }
-  return products[productIndex]
+  return await new Promise((resolve, _reject) => {
+    resolve(products[productIndex])
+  })
 }
 
-export const deleteProduct = (id: string): boolean => {
+export const deleteProduct = async (id: string): Promise<boolean> => {
   const productToDelete = products.findIndex(e => e.id === id)
-  if (productToDelete === -1) return false
+  if (productToDelete === -1) {
+    return await new Promise((resolve, _reject) => {
+      resolve(false)
+    })
+  }
   products.splice(productToDelete, 1)
-  return true
+  return await new Promise((resolve, _reject) => {
+    resolve(true)
+  })
 }
