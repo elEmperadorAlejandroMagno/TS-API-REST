@@ -24,7 +24,7 @@ export async function getDB (): Promise<Database> {
 
 export async function getProducts (filter: ProductType | undefined): Promise<any> {
   const db = await getDB()
-  const query = `
+  let query = `
     SELECT 
       p.id, 
       p.title, 
@@ -39,6 +39,7 @@ export async function getProducts (filter: ProductType | undefined): Promise<any
     FROM products p 
   `
   if (filter != null) {
+    query += 'WHERE p.type = ?'
     const result = await db.all(query, filter)
     return result
   }
