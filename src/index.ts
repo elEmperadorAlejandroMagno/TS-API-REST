@@ -35,7 +35,7 @@ app.post('/upload', upload.array('images', 10), (req, res) => {
     if (files == null) {
       throw new Error('No files found')
     }
-    const filePaths = files.map(file => `images/products/${file.filename}`)
+    const filePaths = files.map(file => `/images/products/${file.filename}`)
     res.status(200).json({ message: 'images uploaded', files: filePaths })
   } catch (error) {
     res.status(400).json({ message: 'Error al cargar las imagenes', error })

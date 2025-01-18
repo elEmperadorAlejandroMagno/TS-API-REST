@@ -81,7 +81,7 @@ export async function addProduct (product: Product): Promise<Product | boolean> 
     const db = await getDB()
     await db.run('INSERT INTO products (id, title, description, price, type) VALUES (?, ?, ?, ?, ?)', newProduct.id, newProduct.title, newProduct.description, newProduct.price, newProduct.type)
     if (product.images != null) {
-      await db.run('INSERT INTO product_images (product_id, image) VALUES (?, ?)', newProduct.id, product.images)
+      await db.run('INSERT INTO product_images (product_id, image) VALUES (?, ?)', newProduct.id, product.images[0])
     }
     const createdProduct = await getProduct(newProduct.id)
     return createdProduct
